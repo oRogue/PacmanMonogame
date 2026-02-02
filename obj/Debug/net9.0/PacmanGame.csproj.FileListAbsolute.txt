@@ -1,0 +1,86 @@
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\PacmanGame.exe
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\PacmanGame.deps.json
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\PacmanGame.runtimeconfig.json
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\PacmanGame.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\PacmanGame.pdb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Autofac.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\MonoGame.Extended.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\MonoGame.Extended.Content.Pipeline.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\MonoGame.Framework.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\NVorbis.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\android-arm\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\android-arm64\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\android-x64\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\android-x86\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\ios-arm64\native\libopenal.a
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\iossimulator-arm64\native\libopenal.a
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\iossimulator-x64\native\libopenal.a
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\linux-arm64\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\linux-x64\native\libopenal.so
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\osx\native\libopenal.dylib
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\win-x64\native\openal.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\mgcb.tool.restore
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.AssemblyInfo.cs
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.Up2Date
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\refint\PacmanGame.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.pdb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\PacmanGame.genruntimeconfig.cache
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\obj\Debug\net9.0\ref\PacmanGame.dll
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\pacman-tilemap.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\pacman-tileset.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\pacman-wall-24.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\pacman-wall-24_0.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\graph-directions.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\path.xnb
+C:\Users\Asus\Desktop\University\Game Algo\PacmanGame\bin\Debug\net9.0\Content\pacman-sprites.xnb
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\mgcb.tool.restore
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.AssemblyReference.cache
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.AssemblyInfoInputs.cache
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.AssemblyInfo.cs
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.CoreCompileInputs.cache
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.dll
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\refint\PacmanGame.dll
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.pdb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\graph-directions.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\pacman-sprites.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\pacman-tilemap.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\pacman-tileset.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\pacman-wall-24.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\pacman-wall-24_0.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Content\path.xnb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\PacmanGame.exe
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\PacmanGame.deps.json
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\PacmanGame.runtimeconfig.json
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\PacmanGame.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\PacmanGame.pdb
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\Autofac.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\MonoGame.Extended.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\MonoGame.Extended.Content.Pipeline.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\MonoGame.Framework.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\NVorbis.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\android-arm\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\android-arm64\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\android-x64\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\android-x86\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\ios-arm64\native\libopenal.a
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\iossimulator-arm64\native\libopenal.a
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\iossimulator-x64\native\libopenal.a
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\linux-arm64\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\linux-x64\native\libopenal.so
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\osx\native\libopenal.dylib
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\win-x64\native\openal.dll
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.Up2Date
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.genruntimeconfig.cache
+C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\ref\PacmanGame.dll

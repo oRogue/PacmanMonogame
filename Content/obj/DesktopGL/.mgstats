@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/graph-directions.png","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/graph-directions.xnb","TextureProcessor","Texture2DContent",616,36949,0.1641789
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/pacman-sprites.png","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/pacman-sprites.xnb","TextureProcessor","Texture2DContent",5581,368725,0.1406168
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/pacman-tilemap.tmx","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/pacman-tilemap.xnb","TiledMapProcessor","TiledMapContentItem",3824,4493,0.1990131
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/pacman-tileset.tsx","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/pacman-tileset.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",242,187,0.1569043
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/pacman-wall-24.png","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/pacman-wall-24_0.xnb","TextureProcessor","Texture2DContent",2126,13909,0.1084258
+"C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/path.png","C:/Users/Asus/Desktop/University/Game Algo/PacmanGame/Content/bin/DesktopGL/path.xnb","TextureProcessor","Texture2DContent",703,20821,0.1258331

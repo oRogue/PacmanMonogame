@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/zikry/Desktop/PacmanGame/Content/graph-directions.png","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/graph-directions.xnb","TextureProcessor","Texture2DContent",616,36949,0.3846109
+"C:/Users/zikry/Desktop/PacmanGame/Content/pacman-sprites.png","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/pacman-sprites.xnb","TextureProcessor","Texture2DContent",5581,368725,0.0927062
+"C:/Users/zikry/Desktop/PacmanGame/Content/pacman-tilemap.tmx","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/pacman-tilemap.xnb","TiledMapProcessor","TiledMapContentItem",3824,4493,0.5707181
+"C:/Users/zikry/Desktop/PacmanGame/Content/pacman-tileset.tsx","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/pacman-tileset.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",242,187,0.1952428
+"C:/Users/zikry/Desktop/PacmanGame/Content/pacman-wall-24.png","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/pacman-wall-24.xnb","TextureProcessor","Texture2DContent",2126,13909,0.0486736
+"C:/Users/zikry/Desktop/PacmanGame/Content/path.png","C:/Users/zikry/Desktop/PacmanGame/Content/bin/DesktopGL/Content/path.xnb","TextureProcessor","Texture2DContent",703,20821,0.1685566
