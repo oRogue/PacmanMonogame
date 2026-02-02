@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zikry\\Desktop\\PacmanGame\\PacmanGame.csproj": {}
+    "E:\\GitHub Cloned Repo\\PacmanMonogame\\PacmanGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zikry\\Desktop\\PacmanGame\\PacmanGame.csproj": {
+    "E:\\GitHub Cloned Repo\\PacmanMonogame\\PacmanGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zikry\\Desktop\\PacmanGame\\PacmanGame.csproj",
+        "projectUniqueName": "E:\\GitHub Cloned Repo\\PacmanMonogame\\PacmanGame.csproj",
         "projectName": "PacmanGame",
-        "projectPath": "C:\\Users\\zikry\\Desktop\\PacmanGame\\PacmanGame.csproj",
+        "projectPath": "E:\\GitHub Cloned Repo\\PacmanMonogame\\PacmanGame.csproj",
         "packagesPath": "C:\\Users\\zikry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zikry\\Desktop\\PacmanGame\\obj\\",
+        "outputPath": "E:\\GitHub Cloned Repo\\PacmanMonogame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

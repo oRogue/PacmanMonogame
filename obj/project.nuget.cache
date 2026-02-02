@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3jvDgcmP/GI=",
+  "dgSpecHash": "hPHXtxMgcBE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zikry\\Desktop\\PacmanGame\\PacmanGame.csproj",
+  "projectFilePath": "E:\\GitHub Cloned Repo\\PacmanMonogame\\PacmanGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zikry\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\zikry\\.nuget\\packages\\monogame.content.builder.task\\3.8.4.1\\monogame.content.builder.task.3.8.4.1.nupkg.sha512",

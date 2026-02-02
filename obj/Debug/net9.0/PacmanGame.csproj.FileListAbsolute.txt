@@ -84,3 +84,47 @@ C:\Users\zikry\Desktop\PacmanGame\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.
 C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.csproj.Up2Date
 C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\PacmanGame.genruntimeconfig.cache
 C:\Users\zikry\Desktop\PacmanGame\obj\Debug\net9.0\ref\PacmanGame.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\graph-directions.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\pacman-sprites.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\pacman-tilemap.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\pacman-tileset.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\pacman-wall-24.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\pacman-wall-24_0.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Content\path.xnb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\PacmanGame.exe
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\PacmanGame.deps.json
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\PacmanGame.runtimeconfig.json
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\PacmanGame.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\PacmanGame.pdb
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\Autofac.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\MonoGame.Extended.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\MonoGame.Extended.Content.Pipeline.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\MonoGame.Framework.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\NVorbis.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\android-arm\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\android-arm64\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\android-x64\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\android-x86\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\ios-arm64\native\libopenal.a
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\iossimulator-arm64\native\libopenal.a
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\iossimulator-x64\native\libopenal.a
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\linux-arm64\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\linux-x64\native\libopenal.so
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\osx\native\libopenal.dylib
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\win-x64\native\openal.dll
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+E:\GitHub Cloned Repo\PacmanMonogame\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.dll
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\mgcb.tool.restore
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.csproj.AssemblyReference.cache
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.AssemblyInfoInputs.cache
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.AssemblyInfo.cs
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.csproj.CoreCompileInputs.cache
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.sourcelink.json
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.csproj.Up2Date
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.dll
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\refint\PacmanGame.dll
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.pdb
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\PacmanGame.genruntimeconfig.cache
+E:\GitHub Cloned Repo\PacmanMonogame\obj\Debug\net9.0\ref\PacmanGame.dll

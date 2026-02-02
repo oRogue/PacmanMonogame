@@ -4,12 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/graph-directions.png</File>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/pacman-sprites.png</File>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/pacman-tilemap.tmx</File>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/pacman-tileset.tsx</File>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/pacman-wall-24.png</File>
-    <File>C:/Users/zikry/Desktop/PacmanGame/Content/path.png</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/graph-directions.png</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-sprites.png</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tilemap.tmx</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tileset.tsx</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-wall-24.png</File>
+    <File>E:/GitHub Cloned Repo/PacmanMonogame/Content/path.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
