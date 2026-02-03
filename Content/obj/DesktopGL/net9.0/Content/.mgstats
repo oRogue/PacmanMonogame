@@ -1,7 +1,7 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/graph-directions.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/graph-directions.xnb","TextureProcessor","Texture2DContent",616,36949,0.4365989
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-sprites.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-sprites.xnb","TextureProcessor","Texture2DContent",5581,368725,0.1028545
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tilemap.tmx","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-tilemap.xnb","TiledMapProcessor","TiledMapContentItem",3824,4493,0.3286669
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tileset.tsx","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-tileset.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",242,187,0.1596372
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-wall-24.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-wall-24.xnb","TextureProcessor","Texture2DContent",2126,13909,0.0179073
-"E:/GitHub Cloned Repo/PacmanMonogame/Content/path.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/path.xnb","TextureProcessor","Texture2DContent",703,20821,0.0517439
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/graph-directions.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/graph-directions.xnb","TextureProcessor","Texture2DContent",616,36949,0.1500879
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-sprites.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-sprites.xnb","TextureProcessor","Texture2DContent",5581,368725,0.0251194
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tilemap.tmx","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-tilemap.xnb","TiledMapProcessor","TiledMapContentItem",3824,4493,0.1080899
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-tileset.tsx","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-tileset.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",242,187,0.03984
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/pacman-wall-24.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/pacman-wall-24.xnb","TextureProcessor","Texture2DContent",2126,13909,0.0053517
+"E:/GitHub Cloned Repo/PacmanMonogame/Content/path.png","E:/GitHub Cloned Repo/PacmanMonogame/Content/bin/DesktopGL/Content/path.xnb","TextureProcessor","Texture2DContent",703,20821,0.0057821
