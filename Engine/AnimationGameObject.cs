@@ -109,6 +109,26 @@ namespace GAlgoT2530.Engine
 
         ********************************************************************************/
 		
+            TextureAtlas = Texture2DAtlas.Create("TextureAtlas", Texture,
+                                                 _spriteFactoryFileData.TextureAtlas.RegionWidth,
+                                                 _spriteFactoryFileData.TextureAtlas.RegionHeight);
+
+            SpriteSheet = new SpriteSheet("SpriteSheet", TextureAtlas);
+
+            foreach (var (animationName, cycle) in _spriteFactoryFileData.Cycles)
+            {
+                // Define animation in sprite sheet
+                SpriteSheet.DefineAnimation(animationName, builder => {
+                    builder.IsLooping(cycle.IsLooping);
+                    foreach (var frame in cycle.Frames)
+                    {
+                        builder.AddFrame(frame, TimeSpan.FromSeconds(cycle.FrameDuration));
+                    }
+                });
+            }
+
+            AnimatedSprite = new AnimatedSprite(SpriteSheet, _spriteFactoryFileData.Cycles.First().Key);
+            AnimatedSprite.OriginNormalized = Vector2.Zero;
 		
 		
 		
