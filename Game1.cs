@@ -38,6 +38,7 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        
 
         // TODO: use this.Content to load your game content here
         _tiledMap = Content.Load<TiledMap>("pacman-tilemap");
@@ -70,8 +71,10 @@ public class Game1 : Game
 
     private void ResizeWindow()
     {
-        _graphics.PreferredBackBufferWidth = 29 * 24;
-        _graphics.PreferredBackBufferHeight = 18 * 24;
+        _graphics.PreferredBackBufferWidth =
+            GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+        _graphics.PreferredBackBufferHeight =
+            GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
         _graphics.ApplyChanges();
     }
 }

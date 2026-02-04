@@ -24,6 +24,16 @@
       "frames": [98,99],
       "isLooping": true,
       "frameDuration": 0.2
+    },
+    "ghostEvade": {
+      "frames": [72,73],
+      "isLooping": true,
+      "frameDuration": 0.2
+    },
+    "ghostRecovering": {
+      "frames": [70,71,72,73],
+      "isLooping": true,
+      "frameDuration": 0.2
     }
   }
 }

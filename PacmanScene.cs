@@ -10,6 +10,9 @@ namespace PacmanGame
             gameMap.StartColumn = 18;
             gameMap.StartRow = 11;
 
+            PelletTracker pelletTracker = new PelletTracker("PelletTracker");
+            pelletTracker.PowerPelletMaxTime = 10f;
+
             Ghost ghost = new Ghost();
 
             Pacman pacman = new Pacman();
