@@ -49,10 +49,6 @@ namespace PacmanGame
             _tileGraph = gameMap.TileGraph;
 
             _pelletLayer = _tiledMap.GetLayer<TiledMapTileLayer>("Food");
-
-            _pacman = (Pacman)GameObjectCollection.FindByName("Pacman");
-
-            _pacman.TileReached += CoverPelletTileWithEmptyTile;
         }
 
         public override void Update()

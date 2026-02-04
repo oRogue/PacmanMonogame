@@ -14,12 +14,6 @@ namespace PacmanGame
             pelletTracker.PowerPelletMaxTime = 10f;
 
             Ghost ghost = new Ghost();
-
-            Pacman pacman = new Pacman();
-            pacman.Speed = 100f;
-            pacman.StartColumn = 1;
-            pacman.StartRow = 1;
-            pacman.NavigableTileLayerName = "Food";
         }
     }
 }

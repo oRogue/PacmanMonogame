@@ -7,19 +7,13 @@ namespace PacmanGame
 {
     public class AStar
     {
-        // None = Not seen
-        // Opened = Seen and is in the Priority Queue (PQ)
-        // Closed = Seen, was in the PQ, and has been removed from the PQ.
         private enum State {None = 0, Opened, Closed};
-
-        // AStarData is designed solely for selecting
-        // current graph node to traverse from the priority queue
         private class AStarData : IComparable<AStarData>
         {
             public Tile self;
             public Tile parent;
-            public ulong g; // cost so far from the start node to this node
-            public ulong h; // heuristic fron this node to the end node
+            public ulong g; 
+            public ulong h; 
             public State state;
 
             public AStarData(Tile self, ulong g, ulong h)
@@ -43,8 +37,6 @@ namespace PacmanGame
                 return self.ToString();
             }
         }
-
-        // A "function pointer" pointing to a heuristic function
         public delegate ulong Heuristic(Tile start, Tile end);
 
         public static LinkedList<Tile> Compute(TileGraph graph, Tile start, Tile end, Heuristic heuristic)
@@ -115,10 +107,8 @@ namespace PacmanGame
                 // Get the weights to all neighbours of current node
                 ulong[] weights = graph.Connections[curData.self];
 
-                // For each neighbour ... 
                 for (int i = 0; i < weights.Length; ++i)
                 {
-                    // ... if there is a connection
                     if (weights[i] != 0)
                     {
                         int colNeighbour = curData.self.Col + MoveCol[i];
@@ -129,8 +119,6 @@ namespace PacmanGame
                     }
                     else
                     {
-                        // NOTE: For Pacman, the diagonal connections are not used,
-                        // so their weights are 0.
                         continue;
                     }
 
@@ -161,17 +149,11 @@ namespace PacmanGame
                         neighbourData.g = gNew;
                         neighbourData.parent = curData.self;
                     }
-					
-
-
-                    // Request PQ to update the neighbourData's location in PQ
-                    // amidst any update on its 'g' value.
-                    // (Consult your instructor if you are unsure what this means)
                     if (neighbourData.state == State.Opened)
                     {
                         pq.Update(neighbourData);
                     }
-                    else // here, the neighbourData.state should be State.None
+                    else 
                     {
                         pq.Push(neighbourData);
                         neighbourData.state = State.Opened;

@@ -127,8 +127,6 @@ namespace PacmanGame
             }
         }
 
-        #region ROAM STATE METHODS
-
         private void Roam_Initialize()
         {
             _ghost.MaxSpeed = 80.0f;
@@ -208,10 +206,6 @@ namespace PacmanGame
         {
             _path.Clear();
         }
-
-        #endregion
-
-        #region CHASE STATE METHODS
 
         private void Chase_Initialize()
         {
@@ -294,9 +288,6 @@ namespace PacmanGame
             _path.Clear();
         }
 
-        #endregion
-
-        #region EVADE STATE METHODS
 
         private void Evade_Initialize()
         {
@@ -377,9 +368,6 @@ namespace PacmanGame
             _path.Clear();
         }
 
-        #endregion
-
-        #region TRANSITIONS
 
         private bool TransitionTriggered_RoamToChase()
         {
@@ -422,7 +410,5 @@ namespace PacmanGame
         {
             return (!_isPowerPelletRunning && _chaseRemainingSeconds > 0f);
         }
-
-        #endregion
     }
 }

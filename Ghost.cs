@@ -11,11 +11,8 @@ namespace PacmanGame
 {
     public class Ghost : AnimationGameObject
     {
-        // HCFSM base-class pointer — can point to NavigationHCFSM now,
-        // or GhostHCFSM later in Problem 5
-        private HCFSM _fsm;
 
-        // Attributes
+        private HCFSM _fsm;
         public float MaxSpeed;
 
         public Ghost() : base("ghost-animations.sf")
@@ -26,25 +23,16 @@ namespace PacmanGame
         {
             MaxSpeed = 100.0f;
 
-            // Initialize Animation to "ghostRedDown"
             AnimatedSprite.SetAnimation("ghostRedDown");
             AnimatedSprite.TextureRegion = SpriteSheet.TextureAtlas[AnimatedSprite.Controller.CurrentFrame];
 
-            // Grab GameMap to set starting position
             GameMap gameMap = (GameMap)GameObjectCollection.FindByName("GameMap");
             TiledMap tiledMap = gameMap.TiledMap;
-            Pacman pacman = (Pacman)GameObjectCollection.FindByName("Pacman");
 
-            // Initialize Position from start tile
-            Tile srcTile = new Tile(gameMap.StartColumn, gameMap.StartRow);
-            Position = Tile.ToPosition(srcTile, tiledMap.TileWidth, tiledMap.TileHeight);
-
-            // Construct and initialise the Ghost FSM (Problem 5)
-            _fsm = new GhostHCFSM(_game, this, tiledMap, gameMap.TileGraph, pacman);
+            _fsm = new GhostStealingFSM(_game, this, tiledMap, gameMap.TileGraph);
             _fsm.Initialize();
         }
 
-        // Ghost.Update() now only delegates to the FSM
         public override void Update()
         {
             _fsm.Update();
@@ -57,10 +45,6 @@ namespace PacmanGame
             _game.SpriteBatch.End();
         }
 
-        // ---------------------------------------------------------------
-        // Helper: move from src toward dest at MaxSpeed over elapsedSeconds.
-        // Returns dest if the ghost can reach or overshoot it this frame.
-        // ---------------------------------------------------------------
         public Vector2 Move(Vector2 src, Vector2 dest, float elapsedSeconds)
         {
             Vector2 dP       = dest - src;
@@ -77,11 +61,6 @@ namespace PacmanGame
                 return dest;
             }
         }
-
-        // ---------------------------------------------------------------
-        // Helper: pick the correct animation based on which tile the ghost
-        // is on (ghostTile) and which tile it is heading toward (nextTile).
-        // ---------------------------------------------------------------
         public void UpdateAnimatedSprite(Tile ghostTile, Tile nextTile)
         {
             string[] directions = { "NorthWest", "Up"    , "NorthEast",
