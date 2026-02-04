@@ -24,52 +24,89 @@ namespace PacmanGame
 
         private Vector2 _destTilePosition;
 
-        public GhostHCFSM(GameEngine game, Ghost ghost, TiledMap map, TileGraph graph)
+        private GameObject _pacman;
+        private Tile _nextTile;
+        private Vector2 _nextTilePosition;
+
+        public float RoamMaxSeconds;
+        public float ChaseMaxSeconds;
+        private float _roamRemainingSeconds;
+        private float _chaseRemainingSeconds;
+
+        public GhostHCFSM(GameEngine game, Ghost ghost, TiledMap map, TileGraph graph, Pacman pacman)
         {
+            _path = new LinkedList<Tile>();
+
             _game = game;
             _ghost = ghost;
             _tiledMap = map;
             _tileGraph = graph;
+            _pacman = pacman;
         }
 
         public override void Initialize()
         {
             CurrentState = State.Roam;
 
+            RoamMaxSeconds = 3f;
+            ChaseMaxSeconds = 5f;
+            _roamRemainingSeconds = 0f;
+            _chaseRemainingSeconds = 0f;
+
             Roam_Initialize();
         }
 
         public override void Update()
         {
-            Roam_Action();
+            if (CurrentState == State.Roam)
+            {
+                if (TransitionTriggered_RoamToChase())
+                {
+                    Chase_Initialize();
+                    CurrentState = State.Chase;
+                }
+                else
+                {
+                    Roam_Action();
+                }
+            }
+            else if (CurrentState == State.Chase)
+            {
+                if (TransitionTriggered_ChaseToRoam())
+                {
+                    Roam_Initialize();
+                    CurrentState = State.Roam;
+                }
+                else
+                {
+                    Chase_Action();
+                }
+            }
         }
 
-        /// ROAM STATE ///
+        #region ROAM STATE METHODS
+
         private void Roam_Initialize()
         {
-            // Set the ghost Speed
             _ghost.MaxSpeed = 80.0f;
 
-            // Initialize source tile from owner's current position
             _srcTile = Tile.ToTile(_ghost.Position, _tiledMap.TileWidth, _tiledMap.TileHeight);
         }
 
         private void Roam_Action()
         {
+            _roamRemainingSeconds -= ScalableGameTime.DeltaTime;
+
             if (Roam_IsPathEmpty())
             {
-                // Update source tile
                 _srcTile = Tile.ToTile(_ghost.Position, _tiledMap.TileWidth, _tiledMap.TileHeight);
 
-                // Get new random path
                 _path = Roam_GenerateRandomPath(_tileGraph, _srcTile);
                 _path.RemoveFirst();
 
-                // Update destination tile and its position
                 _destTile = _path.Last.Value;
                 _destTilePosition = Tile.ToPosition(_destTile, _tiledMap.TileWidth, _tiledMap.TileHeight);
 
-                // Change animation
                 Tile nextTile = _path.First.Value;
                 _ghost.UpdateAnimatedSprite(_srcTile, nextTile);
             }
@@ -84,7 +121,6 @@ namespace PacmanGame
 
         private LinkedList<Tile> Roam_GenerateRandomPath(TileGraph graph, Tile srcTile)
         {
-            // Randomly select a navigable tile as destination
             Tile randomTile = new Tile(-1, -1);
             while (!_tileGraph.Nodes.Contains(randomTile) ||
                    randomTile.Equals(srcTile)
@@ -94,7 +130,6 @@ namespace PacmanGame
                 randomTile.Row = _game.Random.Next(0, _tiledMap.Height);
             }
 
-            // Compute an A* path
             return AStar.Compute(_tileGraph, srcTile, randomTile, AStarHeuristic.EuclideanSquared);
         }
 
@@ -112,11 +147,9 @@ namespace PacmanGame
             {
                 Debug.WriteLine($"Reach head tile (Col = {headTile.Col}, Row = {headTile.Row}).");
 
-                // Remove the head tile from path
                 Debug.WriteLine($"Removing head tile. Get next node from path.");
                 _path.RemoveFirst();
 
-                // Update animation
                 if (!Roam_IsPathEmpty())
                 {
                     Tile nextTile = _path.First.Value;
@@ -124,9 +157,116 @@ namespace PacmanGame
                 }
             }
 
-            // Move the ghost to the new tile location
             _ghost.Position = _ghost.Move(_ghost.Position, headTilePosition, elapsedSeconds);
             _ghost.AnimatedSprite.Update(ScalableGameTime.GameTime);
         }
+
+        #endregion
+
+        #region CHASE STATE METHODS
+
+        private void Chase_Initialize()
+        {
+            _ghost.MaxSpeed = 120.0f;
+
+            _nextTilePosition = _ghost.Position;
+            _nextTile = Tile.ToTile(_nextTilePosition, _tiledMap.TileWidth, _tiledMap.TileHeight);
+        }
+
+        private void Chase_Action()
+        {
+            float elapsedSeconds = ScalableGameTime.DeltaTime;
+
+            _chaseRemainingSeconds -= ScalableGameTime.DeltaTime;
+
+            if (_ghost.Position.Equals(_nextTilePosition))
+            {
+                if (Chase_ShouldRecalculatePathTowardsPacman())
+                {
+                    Chase_RecalculatePathTowardsPacman();
+                }
+                else
+                {
+                    _srcTile = _nextTile;
+                    _path.RemoveFirst();
+                    if (!_srcTile.Equals(_destTile))
+                    {
+                        _nextTile = _path.First.Value;
+                        _nextTilePosition = Tile.ToPosition(_nextTile, _tiledMap.TileWidth, _tiledMap.TileHeight);
+                        _ghost.UpdateAnimatedSprite(_srcTile, _nextTile);
+                    }
+                }
+            }
+
+            _ghost.Position = _ghost.Move(_ghost.Position, _nextTilePosition, elapsedSeconds);
+            _ghost.AnimatedSprite.Update(ScalableGameTime.GameTime);
+        }
+
+        private bool Chase_ShouldRecalculatePathTowardsPacman()
+        {
+            if (_path != null)
+            {
+                _destTile = Tile.ToTile(_pacman.Position, _tiledMap.TileWidth, _tiledMap.TileHeight);
+
+                LinkedListNode<Tile> destTileNode = _path.Find(_destTile);
+                while (_path.Last != destTileNode)
+                {
+                    _path.RemoveLast();
+                }
+
+                return destTileNode == null;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private void Chase_RecalculatePathTowardsPacman()
+        {
+            _srcTile = Tile.ToTile(_ghost.Position, _tiledMap.TileWidth, _tiledMap.TileHeight);
+            _destTile = Tile.ToTile(_pacman.Position, _tiledMap.TileWidth, _tiledMap.TileHeight);
+
+            _path.Clear();
+            _path = AStar.Compute(_tileGraph, _srcTile, _destTile, AStarHeuristic.EuclideanSquared);
+
+            _path.RemoveFirst();
+
+            if (!_srcTile.Equals(_destTile))
+            {
+                _nextTile = _path.First.Value;
+                _nextTilePosition = Tile.ToPosition(_nextTile, _tiledMap.TileWidth, _tiledMap.TileHeight);
+
+                _ghost.UpdateAnimatedSprite(_srcTile, _nextTile);
+            }
+        }
+
+        #endregion
+
+        #region TRANSITIONS
+
+        private bool TransitionTriggered_RoamToChase()
+        {
+            if (_roamRemainingSeconds <= 0f)
+            {
+                _roamRemainingSeconds = RoamMaxSeconds;
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool TransitionTriggered_ChaseToRoam()
+        {
+            if (_chaseRemainingSeconds <= 0f)
+            {
+                _chaseRemainingSeconds = ChaseMaxSeconds;
+                return true;
+            }
+
+            return false;
+        }
+
+        #endregion
     }
 }
